@@ -71,22 +71,27 @@ Abstraction of Pods.
 It makes sure there are no databases inconsistencies. 
 However, databases are often hosted outside of the Kubernetes cluster.
 
- 
+### Minikube
 
+It is one-node Kubernetes cluster, open source, with Docker pre-installed. 
+It runs on a Virtual Box or some other hypervisor.
 
+### kubectl
 
+It is a command line tool for **any** Kubernetes cluster.
 
+Common commands:
 
+`kubectl create deployment`
 
+`kubectl get nodes | pod | services | replicaset | deployment`
 
+`kubectl logs [pod name]`
+`kubectl exec -it [pod name] --bin/bash`
+`kubectl describe pod [pod name]`
 
-
-
-
-
-
-
-
+`kubectl apply -f [file name]`
+`kubectl delete -f [file name]`
 
 
 
