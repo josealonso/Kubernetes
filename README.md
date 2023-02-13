@@ -71,6 +71,18 @@ Abstraction of Pods.
 It makes sure there are no databases inconsistencies. 
 However, databases are often hosted outside of the Kubernetes cluster.
 
+**LAYERS OF ABSTRACTION**
+
+- Deployment manages a ..... 
+- ReplicaSet manages a .....
+- Pod is an abtraction of .....
+- Container
+
+Everything below Deployment is handled by Kubernetes.
+
+
+
+
 ### Minikube
 
 It is one-node Kubernetes cluster, open source, with Docker pre-installed. 
@@ -110,5 +122,11 @@ Reference the secret values in the deployment file
 `kubectl  apply -f mongodb-deployment.yaml`
 `kubectl get pod`
 
-Create the Service yaml file
+Create the Deployment and Service yaml file
   The *selector* value must be the same as the Deployment *label*
+
+**Create a MongoExpress Pod**
+
+`kubectl apply -f mongo-configmap.yaml`
+
+`kubectl apply -f mongo-express.yaml`
