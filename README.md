@@ -130,3 +130,7 @@ Create the Deployment and Service yaml file
 `kubectl apply -f mongo-configmap.yaml`
 
 `kubectl apply -f mongo-express.yaml`
+
+`minikube service mongo-express-service`
+
+#### Namespaces
