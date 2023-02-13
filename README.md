@@ -109,3 +109,6 @@ Reference the secret values in the deployment file
 
 `kubectl  apply -f mongodb-deployment.yaml`
 `kubectl get pod`
+
+Create the Service yaml file
+  The *selector* value must be the same as the Deployment *label*
