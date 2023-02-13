@@ -108,3 +108,4 @@ Secret must be created before the deployment, order matters !!
 Reference the secret values in the deployment file
 
 `kubectl  apply -f mongodb-deployment.yaml`
+`kubectl get pod`
