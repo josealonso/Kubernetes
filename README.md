@@ -93,5 +93,13 @@ Common commands:
 `kubectl apply -f [file name]`
 `kubectl delete -f [file name]`
 
+### Example with minikube and kubectl
 
+`minikube start`
 
+`kubectl apply -f mongo-secret.yaml`
+`kubectl get secret`
+
+Reference the secret values in the deployment file
+
+`kubectl  apply -f mongodb-deployment.yaml`
