@@ -97,6 +97,11 @@ Common commands:
 
 `minikube start`
 
+Secret must be created before the deployment, order matters !!
+
+`echo -n 'username' | base64`
+`echo -n 'password' | base64`
+
 `kubectl apply -f mongo-secret.yaml`
 `kubectl get secret`
 
